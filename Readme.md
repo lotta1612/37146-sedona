@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [lotta16](https://up.htmlacademy.ru/htmlcss/21/user/37146).
-* Наставник: `Неизвестно`.
+* Наставник: [Артём Альтигин] (https://up.htmlacademy.ru/htmlcss/21/user/82397).
 
 ---
 
