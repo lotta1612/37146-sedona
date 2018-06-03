@@ -6,7 +6,7 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-header-logo"><img src="http://placehold.it/150x100" alt="Логотип SEDONA"></a>
+      <a class="main-logo"><img src="http://placehold.it/150x100" width="139" height="70" alt="Логотип SEDONA"></a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -18,39 +18,41 @@
     </header>
     <main class="catalog">
       <section class="catalog-check">
-        <div class="catalog-check-features">
+        <div class="check-features">
           <h2>Инфраструктура</h2>
-          <ul class="catalog-check-list">
+          <ul class="check-list">
             <!-- Здесь будет форма? -->
-            <li>бассейн</li>
-            <li>парковка</li>
-            <li>wi-fi</li>
+            <li><button class="check-point">x</button> бассейн</li>
+            <li><button class="check-point">x</button> парковка</li>
+            <li><button class="check-point">x</button> wi-fi</li>
           </ul>
         </div>
-        <div class="catalog-check-type">
+        <div class="check-type">
           <h2>Тип жилья</h2>
-          <ul class="catalog-check-list">
+          <ul class="check-list">
             <!-- Здесь будет форма? -->
-            <li>гостиница</li>
-            <li>мотель</li>
-            <li>апартаменты</li>
+            <li><button class="check-point">x</button> гостиница</li>
+            <li><button class="check-point">x</button> мотель</li>
+            <li><button class="check-point">x</button> апартаменты</li>
           </ul>
         </div>
-        <div class="catalog-check-price">
+        <div class="check-price">
           <h2>Стоимость в сутки (р):</h2>
           <!-- Здесь будет форма -->
         </div>
       </section>
       <section class="catalog-sort">
-        <p><b>Найдено: 3</b></p>
-        <p>Сортировка:</p>
-        <p><a href="#">по цене</a></p>
-        <p><a href="#">по типу</a></p>
-        <p><a href="#">по рейтингу</a></p>
+        <h2>Найдено: 3</h2>
+        <h3>Сортировка:</h3>
+        <ul class="sort-list">
+          <li><a href="#">по цене</a></li>
+          <li><a href="#">по типу</a></li>
+          <li><a href="#">по рейтингу</a></li>
+        </ul>
         <p>
           <!-- Здесь стрелочки -->
-          <a href="#"><img src="http://placehold.it/150x100" alt="up"></a>
-          <a href="#"><img src="http://placehold.it/150x100" alt="down"></a>
+          <a href="#"><img src="http://placehold.it/150x100" width="11" height="10" alt="up"></a>
+          <a href="#"><img src="http://placehold.it/150x100" width="11" height="10" alt="down"></a>
         </p>
       </section>
       <section class="catalog-list">
@@ -58,14 +60,14 @@
           <li>
             <div class="catalog-list-photo"><img src="http://placehold.it/150x100" alt="Гостиница Amara Resort & SPA"></div>
             <div class="catalog-list-info">
-              <h3>Amara Resort & SPA</h3>
+              <h3>Amara Resort &amp; SPA</h3>
               <div class="catalog-list-more">
                 <p>Гостиница</p>
                 <a class="button-more" href="#">Подробнее</a>
               </div>
               <div class="catalog-list-more">
                 <p>от 4000 р.</p>
-                <a class="button-book" href="#">Забронировать</a>
+                <button class="button-book" href="#">Забронировать</button>
               </div>
             </div>
             <div class="catalog-list-rating">
@@ -86,7 +88,7 @@
               </div>
               <div class="catalog-list-more">
                 <p>от 3000 р.</p>
-                <a class="button-book" href="#">Забронировать</a>
+                <button class="button-book" href="#">Забронировать</button>
               </div>
             </div>
             <div class="catalog-list-rating">
@@ -106,7 +108,7 @@
               </div>
               <div class="catalog-list-more">
                 <p>от 2000 р.</p>
-                <a class="button-book" href="#">Забронировать</a>
+                <button class="button-book" href="#">Забронировать</button>
               </div>
             </div>
             <div class="catalog-list-rating">
@@ -118,12 +120,12 @@
       </section>
     </main>
     <footer class="footer">
-      <div class="hashtag">#visitsedona</div>
+      <div class="hashtag"><a class="hashtag-link" href="#">#visitsedona</a></div>
       <div class="footer-social">
         <ul>
-          <li><a class="social-button" href="#">Твитер</a></li>
-          <li><a class="social-button" href="#">Фэйсбук</a></li>
-          <li><a class="social-button" href="#">Ютуб</a></li>
+          <li><a class="social-link" href="#">Твитер</a></li>
+          <li><a class="social-link" href="#">Фэйсбук</a></li>
+          <li><a class="social-link" href="#">Ютуб</a></li>
         </ul>
         <div class="footer-copyright">
           website by <a href="#">html academy</a>
