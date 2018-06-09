@@ -6,7 +6,9 @@
   </head>
   <body>
     <header class="main-header">
-      <a class="main-logo"><img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA"></a>
+      <a class="main-logo">
+        <img src="img/logo.png" width="138" height="70" alt="Логотип SEDONA">
+      </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
@@ -15,7 +17,8 @@
           <li><a href="#">Гостиницы</a></li>
         </ul>
       </nav>
-      <img class="header-img" src="img/header-img.jpg" width="1200" height="564" alt="Sedona"></a>
+      <h1 class="visually-hidden">Городок Седона</h1>
+      <img class="header-img" src="img/header-img.jpg" width="1200" height="564" alt="Sedona">
     </header>
     <main class="container">
       <section class="container-reasons">
@@ -88,6 +91,34 @@
         </section>
         <section class="search-form">
           <h2>Поиск гостиницы в Седоне</h2>
+          <form class="search-hotel" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend>Поиск гостиницы в Седоне</legend>
+              <p>
+                <label>
+                  Дата заезда:
+                  <input type="date" name="hotel-arrival">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Дата выезда:
+                  <input type="date" name="hotel-departure">
+                </label>
+              </p>
+              <p>
+                <label>
+                  Взрослые:
+                  <input type="number" name="hotel-adults" value="2">
+                </label>
+                <label>
+                  Дети:
+                  <input type="number" name="hotel-kids" value="0">
+                </label>
+              </p>
+              <a class="search-result" href="catalog.html">Найти</a>
+            </fieldset>
+          </form>
           <!-- Здесь будет форма -->
         </section>
       </section>
