@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="main-header">
@@ -14,21 +17,22 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
       <h1 class="visually-hidden">Городок Седона</h1>
-      <img class="header-img" src="img/header-img.jpg" width="1200" height="564" alt="Sedona">
+      <img class="header-img" src="img/header-img.jpg" width="1200" height="564" alt="Городок Sedona">
     </header>
     <main class="container">
       <section class="container-reasons">
-        <p><b>Седона — небольшой городок в Аризоне, заслуживающий большего!</b></p>
+        <p class="reasons-header">Седона — небольшой городок в Аризоне, <br>
+          заслуживающий большего!</p>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <section class="reasons-first">
           <section class="first-description">
             <div class="first-text">
               <h2>Настоящий городок</h2>
-              <span>&mdash; №1 &mdash;</span>
+              <span class="number-first">&mdash; №1 &mdash;</span>
               <p>Седона — не аттракцион для туристов, там течет своя жизнь</p>
             </div>
             <div class="first-img">
@@ -85,37 +89,37 @@
       </section>
       <section class="container-search">
         <section class="search-map">
-          <p><b>Заинтересовались</b></p>
-          <p> укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+          <p class="search-header">Заинтересовались</p>
+          <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
           <a href="#"><img src="img/map.jpg" width="1200" height="593" alt="Карта"></a>
         </section>
         <section class="search-form">
           <h2>Поиск гостиницы в Седоне</h2>
           <form class="search-hotel" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
-              <legend>Поиск гостиницы в Седоне</legend>
-              <p>
+              <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
+              <div class="search-item">
                 <label>
                   Дата заезда:
-                  <input type="date" name="hotel-arrival">
+                  <input class="search-window" type="date" name="hotel-arrival">
                 </label>
-              </p>
-              <p>
+              </div>
+              <div class="search-item">
                 <label>
                   Дата выезда:
-                  <input type="date" name="hotel-departure">
+                  <input class="search-window" type="date" name="hotel-departure">
                 </label>
-              </p>
-              <p>
+              </div>
+              <div class="search-item">
                 <label>
                   Взрослые:
-                  <input type="number" name="hotel-adults" value="2">
+                  <input class="search-window" type="number" name="hotel-adults" value="2">
                 </label>
                 <label>
                   Дети:
-                  <input type="number" name="hotel-kids" value="0">
+                  <input class="search-window" type="number" name="hotel-kids" value="0">
                 </label>
-              </p>
+              </div>
               <a class="search-result" href="catalog.html">Найти</a>
             </fieldset>
           </form>
