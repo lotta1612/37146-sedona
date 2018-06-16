@@ -106,26 +106,26 @@
             <fieldset>
               <legend class="visually-hidden">Поиск гостиницы в Седоне</legend>
               <div class="search-item">
-                <label>
+                <label for="arrival">
                   Дата заезда:
-                  <input class="search-window" type="date" name="hotel-arrival">
                 </label>
+                <input class="search-window" type="date" name="hotel-arrival" id="arrival">
               </div>
               <div class="search-item">
-                <label>
+                <label for="departure">
                   Дата выезда:
-                  <input class="search-window" type="date" name="hotel-departure">
                 </label>
+                <input class="search-window" type="date" name="hotel-departure" id="departure">
               </div>
               <div class="search-item">
-                <label>
+                <label for="adults">
                   Взрослые:
-                  <input class="search-window" type="number" name="hotel-adults" value="2">
                 </label>
-                <label>
+                <input class="search-window" type="number" name="hotel-adults" id="adults" value="2">
+                <label for="kids">
                   Дети:
-                  <input class="search-window" type="number" name="hotel-kids" value="0">
                 </label>
+                <input class="search-window" type="number" name="hotel-kids" value="0">
               </div>
               <a class="search-result" href="catalog.html">Найти</a>
             </fieldset>
@@ -134,7 +134,7 @@
         </section>
       </section>
   </main>
-  <footer class="footer">    
+  <footer class="footer">
     <a class="hashtag-link" href="#">#visitsedona</a></div>
     <div class="footer-social">
       <ul>

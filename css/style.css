@@ -15,15 +15,15 @@ a {
   text-decoration: none;
 }
 
-.main-navigation {
-  font-weight: bold;
-  background-color: #ffffff;
-}
-
-.site-navigation {
+ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.main-navigation {
+  font-weight: bold;
+  background-color: #ffffff;
 }
 
 .site-navigation a {
@@ -59,9 +59,6 @@ a {
 }
 
 .first-list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
   display: flex;
 }
 
@@ -75,9 +72,6 @@ a {
 }
 
 .last-list {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
   display: flex;
 }
 
@@ -172,9 +166,6 @@ a.search-result:active {
 }
 
 .sort-list {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
 }
 
@@ -208,12 +199,8 @@ a.search-result:active {
 }
 
 .catalog-list-item {
-  list-style: none;
-  margin: 0;
-  padding: 0;
   display: flex;
   flex-direction: column;
-
 }
 
 .catalog-list-info h3 {
@@ -386,7 +373,7 @@ a.search-result:active {
 }
 
 .catalog-list {
-  padding: 30px 73px;
+  padding: 0 73px;
 }
 
 .catalog-list-wrapper {
