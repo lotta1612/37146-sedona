@@ -6,6 +6,8 @@ body {
   line-height: 21px;
   font-weight: 400;
   color: #333333;
+  background-color: #f2f2f2;
+  border: none;
   text-transform: uppercase;
 }
 
@@ -20,6 +22,8 @@ a {
 
 .site-navigation {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 .site-navigation a {
@@ -28,6 +32,9 @@ a {
 
 .container-reasons {
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
 }
 
 .reasons-header {
@@ -53,6 +60,9 @@ a {
 
 .first-list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
 }
 
 .first-features h3 {
@@ -66,6 +76,9 @@ a {
 
 .last-list {
   list-style: none;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
 }
 
 .last-list h2 {
@@ -256,4 +269,78 @@ a.search-result:active {
 
 .catalog-list-rating p {
   background-color: #f2f2f2;
+}
+
+
+/* ----- Сеточные стили + какие-то вверху добавляла ----- */
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+.main-header {
+  padding: 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.intro-text {
+  padding: 63px 0 56px;
+}
+
+.first-description {
+  display: flex;
+}
+
+.first-img {
+  width: 800px;
+  height: 256px;
+}
+
+.first-features {
+  background-color: #ffffff;
+}
+
+.first-item {
+  width: 400px;
+  padding: 60px 60px 84px;
+}
+
+.last-item {
+  width: 400px;
+  padding: 48px 60px 60px;
+}
+
+.container-search {
+  display: flex;
+  flex-direction: column;
+}
+ 
+.searc-wrapper {
+  padding: 55px 0 135px;
+}
+
+.search-form {
+  width: 568px;
+  margin: 0 auto;
+}
+
+.footer {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 36px 0;
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
