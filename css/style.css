@@ -441,6 +441,19 @@ header .container {
   display: block;
 }
 
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #cacaca;
+}
+
+.site-navigation-current a:not([href]) {
+  color:#766357;
+}
+
 .main-logo {
   width: 138px;
   height:70px;
@@ -499,13 +512,40 @@ header .container {
 }
 
 .first-list {
+  position: relative;
   display: flex;
   align-items: baseline;
 }
 
 .first-item {
   width: 400px;
-  padding: 60px 60px 84px;
+  padding: 134px 60px 84px;
+}
+
+.first-item::before {
+  content: "";
+  position: absolute;
+  width: 75px;
+  height: 76px;
+  bottom: 198px;
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: bottom;
+}
+
+.home::before {
+  left: 162px;
+  background-image: url(../img/icon-1.svg);
+}
+
+.food::before {
+  left: 563px;
+  background-image: url(../img/icon-3.svg);
+}
+
+.present::before {
+  left: 968px;
+  background-image: url(../img/icon-2.svg);
 }
 
 .reasons-last {
