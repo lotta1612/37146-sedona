@@ -345,6 +345,7 @@ template {
 /* ========================= Мои стили ========================= */
 
 body. html {
+  position: relative;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -397,7 +398,7 @@ img {
   box-shadow: 4px 0 20px #dbdbdb,  -4px 0 20px #dbdbdb;
 }
 
-.catalog-hotel {
+.catalog-height {
   height: 100vh;
 }
 
@@ -407,6 +408,14 @@ footer {
   bottom: 0;
   opacity: 0.9;
 }
+
+
+.footer-catalog {
+  position: static;
+  opacity: 1;
+}
+
+
 
 .container {
   width: 1200px;
