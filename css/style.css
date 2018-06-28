@@ -626,8 +626,8 @@ a.search-result {
   text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
-  padding: 18px 0;
-  margin: 40px 0 0;
+  padding: 16px 0;
+  margin: 35px 0 0;
 }
 
 a.search-result:hover,
@@ -640,34 +640,37 @@ a.search-result:active {
   background-color: #5496bd;
 }
 
+
 .search-group {
   display: flex;
   flex-direction: column;
-  padding: 40px 55px 55px;
-  box-shadow: 0 0 30px rgba(0,0,0,0.2);
 }
 
 .search-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin: 15px 0;
+  padding: 6px 0;
+  margin: 8px 0;
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
   border: 0px;
 }
 
-.search-item:first-child .search-window::after,
-.search-item:nth-child(2) .search-window::after {
-  content: "";
+.calendar {
   position: absolute;
-  right: 68px;
+  right: 66px;
+  cursor: pointer;
+}
 
-  width: 21px;
-  height: 22px;
-  background-image: url("../img/calendar.svg");
-  background-repeat: no-repeat;
+.calendar:hover,
+.calendar:focus {
+  fill: #000000;
+}
+
+.calendar:active {
+  fill: #81b3d2;
 }
 
 .search-window {
@@ -677,6 +680,16 @@ a.search-result:active {
   font: inherit;
   background-color: #f2f2f2;
   border: 0;
+  cursor: pointer;
+}
+
+.search-window:hover {
+  background-color: #ebebeb;
+}
+
+.search-window:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
 }
 
 .search-person {
@@ -698,6 +711,35 @@ a.search-result:active {
   text-align: center;
 }
 
+.adults,
+.kids {
+  position: relative;
+}
+
+.minus {
+  position: absolute;
+  left: 130px;
+  top: 6px;
+}
+
+.plus {
+  position: absolute;
+  left: 204px;
+}
+
+.kids .minus {
+  position: absolute;
+  left: 80px;
+}
+
+.kids .plus {
+  position: absolute;
+  left: 152px;
+}
+
+.minus:hover {
+  color: #000000;
+}
 
 /* ----- FOOTER ----- */
 
@@ -1191,4 +1233,60 @@ input[type="radio"].visually-hidden {
 
 .catalog-list-more {
   margin-right: 6px;
+}
+
+
+.modal {
+  position: absolute;
+  color: #000000;
+  background-color: #ffffff;
+  box-shadow: 0 0 30px rgba(0,0,0,0.2);
+}
+
+.modal-form {
+  box-sizing: border-box;
+  top: 86px;
+  width: 568px;
+  padding: 40px 55px 55px;
+}
+
+.modal-plus {
+  width: 38px;
+  height: 38px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: #ff88ff;
+}
+
+.modal-plus::before,
+.modal-plus::after {
+  content: "";
+  position: absolute;
+  right: 13px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.modal-plus::after {
+  transform: rotate(90deg);
+}
+
+.modal-minus {
+  position: absolute;
+  width: 11px;
+  height: 11px;
+  font-size: 0;
+  border: 0;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.modal-minus::before {
+  content: "";
+  position: absolute;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
 }
