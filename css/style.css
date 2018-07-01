@@ -456,7 +456,7 @@ header .container {
 .site-navigation {
   display: flex;
   justify-content: space-between;
-  padding: 18px 72px;
+  padding: 16px 72px 18px;
   color: #000000;
   font-weight: bold;
 }
@@ -499,12 +499,12 @@ header .container {
 }
 
 .intro-text {
-  padding: 63px 0 56px;
+  padding: 60px 0 53px;
 }
 
 
 .intro-text h2 {
-  padding-bottom: 32px;
+  padding-bottom: 30px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -525,7 +525,7 @@ header .container {
   box-sizing: border-box;
   width: 400px;
   height: 256px;
-  padding: 47px 60px 60px;
+  padding: 47px 70px 60px;
   color: #ffffff;
   background-color: #81b3d2;
 }
@@ -537,7 +537,7 @@ header .container {
 
 .number {
   display: block;
-  padding: 25px 0;
+  padding: 23px 0;
 }
 
 .features {
@@ -562,7 +562,7 @@ header .container {
   position: absolute;
   width: 75px;
   height: 76px;
-  top: 50px;
+  top: 56px;
   left: 163px;
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
@@ -575,7 +575,7 @@ header .container {
   position: absolute;
   width: 75px;
   height: 76px;
-  top: 50px;
+  top: 56px;
   left: 563px;
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
@@ -588,7 +588,7 @@ header .container {
   position: absolute;
   width: 75px;
   height: 76px;
-  top: 50px;
+  top: 56px;
   left: 960px;
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
@@ -599,10 +599,15 @@ header .container {
 .item {
   box-sizing: border-box;
   width: 400px;
-  padding: 48px 60px 60px;
+  padding: 56px 70px 80px;
+}
+
+.dark .item {
+  padding: 46px 70px 60px;
 }
 
 .item h2 {
+  padding: 0;
   font-size: 21px;
   font-weight: bold;
   line-height: 21px;
@@ -619,7 +624,7 @@ header .container {
 }
 
 .searc-wrapper {
-  padding: 55px 0 135px;
+  padding: 50px 0 135px;
 }
 
 /* ----- Форма поиска для index.html ----- */
@@ -644,7 +649,7 @@ header .container {
   padding: 0px;
   position: absolute;
   left: calc(50% - 284px);
-  top: 210px;
+  top: 205px;
   background-color: #ffffff;
 }
 
@@ -799,7 +804,7 @@ footer .container {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 36px 0;
+  padding: 36px 0 42px;
 }
 
 .hashtag-link {
