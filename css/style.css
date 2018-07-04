@@ -1201,6 +1201,13 @@ a.active {
   padding: 0 73px;
 }
 
+.item-border {
+  width: 1200px;
+  border-top: 1px solid #e5e5e5;
+  margin:0 -73px;
+}
+
+
 .item-wrapper {
   display: flex;
   padding: 30px 0;
