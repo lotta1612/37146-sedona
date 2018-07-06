@@ -344,9 +344,7 @@ template {
 
 /* ========================= Мои стили ========================= */
 
-body. html {
-  position: relative;
-  height: 100%;
+body, html {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
@@ -355,7 +353,6 @@ body. html {
   font-weight: normal;
   color: #333333;
   background-color: #f2f2f2;
-  border: none;
   text-transform: uppercase;
 }
 
@@ -387,7 +384,6 @@ input[type="radio"].visually-hidden {
 
   width: 1px;
   height: 1px;
-  margin: -1px;
   border: 0;
   padding: 0;
 
@@ -398,50 +394,11 @@ input[type="radio"].visually-hidden {
   overflow: hidden;
 }
 
-.main-window {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  width: 1200px;
-  min-height: 100%;
-  margin: 0 auto;
-  padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: normal;
-  border: none;
-  text-transform: uppercase;
-  background-color: #ffffff;
-  box-shadow: 4px 0 20px #dbdbdb,  -4px 0 20px #dbdbdb;
-}
-
-.catalog-height {
-  height: 100vh;
-}
-
-footer {
-  margin-top: auto;
-  position: absolute;
-  bottom: 0;
-  opacity: 0.9;
-}
-
-.footer-catalog {
-  position: static;
-  opacity: 1;
-}
-
 .container {
   width: 1200px;
   margin: 0 auto;
-  padding: 0;
   background-color: #ffffff;
-}
-
-header .container {
-  display: flex;
-  flex-direction: column;
+  box-shadow: 4px 0 20px #dbdbdb,  -4px 0 20px #dbdbdb;
 }
 
 .header-img {
@@ -486,16 +443,17 @@ header .container {
   left: calc(50% - 69px);
 }
 
-.site-navigation li:nth-child(2) {
-  margin-right: 220px;
+.site-navigation li {
+  width: 240px;
 }
 
+.site-navigation li:nth-child(3),
+.site-navigation li:nth-child(4) {
+  text-align: right;
+}
 
 .reasons {
   text-align: center;
-  display: flex;
-  flex-direction: column;
-  background-color: #ffffff;
 }
 
 .intro-text {
@@ -503,8 +461,8 @@ header .container {
 }
 
 
-.intro-text h2 {
-  padding-bottom: 30px;
+.reasons h2 {
+  padding: 0 0 30px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
@@ -546,14 +504,13 @@ header .container {
   background-color: #ffffff;
 }
 
-.features h3 {
-  padding: 0 0 25px;
-  margin: 20px 0 0;
+.features h3,
+.features h4 {
   font-size: 21px;
   color: #000000;
 }
 
-.features:not(.dark) {
+.features:not(.grey) {
   padding-top: 86px;
 }
 
@@ -564,6 +521,7 @@ header .container {
   height: 76px;
   top: 56px;
   left: 163px;
+  background-color: #ffffff;
   background-image: url(../img/icon-1.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -577,6 +535,7 @@ header .container {
   height: 76px;
   top: 56px;
   left: 563px;
+  background-color: #ffffff;
   background-image: url(../img/icon-3.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -590,6 +549,7 @@ header .container {
   height: 76px;
   top: 56px;
   left: 960px;
+  background-color: #ffffff;
   background-image: url(../img/icon-2.svg);
   background-repeat: no-repeat;
   background-size: auto;
@@ -599,33 +559,63 @@ header .container {
 .item {
   box-sizing: border-box;
   width: 400px;
-  padding: 56px 70px 80px;
+  padding: 46px 70px 80px;
 }
 
-.dark .item {
+.grey .item {
   padding: 46px 70px 60px;
 }
 
-.item h2 {
-  padding: 0;
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 21px;
+
+.map {
+  margin: 0 auto;
 }
 
-.dark {
+.grey {
   background-color: #eeeeee;
 }
 
-.container-search {
-  display: flex;
-  flex-direction: column;
+.form {
   position: relative;
+  text-align: center;
 }
 
-.searc-wrapper {
-  padding: 50px 0 135px;
+.form h2 {
+  padding: 48px 0 28px;
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 36px;
+  color: #000000;
 }
+
+.form p {
+  padding: 0 0 50px;
+}
+
+.search-header {
+  display: block;
+  width: 568px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  background-color: #766357;
+  padding: 30px 0;
+  margin: 0 auto;
+}
+
+.search-header:hover,
+.search-header:focus {
+  background-color: #604e43;
+}
+
+a.search-header:active {
+  color: #928a85;
+  background-color: #503e33;
+}
+
 
 /* ----- Форма поиска для index.html ----- */
 
@@ -633,8 +623,10 @@ header .container {
   display: none;
   position: absolute;
   box-sizing: border-box;
-  top: 86px;
   width: 568px;
+  padding: 40px 55px 55px;
+  top: 290px;
+  left: calc(50% - 284px);
   padding: 40px 55px 55px;
   color: #000000;
   background-color: #ffffff;
@@ -643,51 +635,6 @@ header .container {
 
 .modal-form-show {
   display: block;
-}
-
-.search-form {
-  display: flex;
-  flex-direction: column;
-  box-sizing: border-box;
-  width: 568px;
-  margin: 0 auto;
-  padding: 0px;
-  position: absolute;
-  left: calc(50% - 284px);
-  top: 205px;
-  background-color: #ffffff;
-}
-
-.searc-wrapper h2 {
-  padding: 0 0 28px;
-  font-size: 30px;
-  font-weight: bold;
-  line-height: 36px;
-  color: #000000;
-}
-
-a.search-header {
-  font-size: 21px;
-  font-weight: bold;
-  line-height: 26px;
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-  background-color: #766357;
-  border: none;
-  padding: 30px 0;
-  margin: 0;
-}
-
-a.search-header:hover,
-a.search-header:active {
-  background-color: #604e43;
-}
-
-a.search-header:active {
-  color: #928a85;
-  background-color: #503e33;
 }
 
 a.search-result {
@@ -805,6 +752,13 @@ a.search-result:active {
 
 /* ----- FOOTER ----- */
 
+footer {
+  position: absolute;
+  bottom: 0;
+  right: calc(50% - 600px);
+  opacity: 0.9;
+}
+
 footer .container {
   display: flex;
   justify-content: space-around;
@@ -837,7 +791,7 @@ footer .container {
   flex-wrap: wrap;
   justify-content: space-between;
   width: 150px;
-  margin: 0 auto:auto;
+  margin: 0 auto;
   padding: 0;
 }
 
@@ -909,6 +863,10 @@ footer .container {
   padding: 0 0 0 40px;
 }
 
+.check-point:focus + label {
+  outline: 2px solid #a5c7fe;
+}
+
 .form-group label {
   position: relative;
   display: block;
@@ -916,7 +874,8 @@ footer .container {
   user-select: none;
 }
 
-.check-point + label.check-off::before {
+
+.check-point + label::before {
   content: "";
   position: absolute;
   width: 23px;
@@ -1150,6 +1109,7 @@ a.active {
 
 .button-more {
   display: inline-block;
+  vertical-align: bottom;
   padding: 3px 16px;
   margin: 14px 0 0;
   font-size: 14px;
@@ -1173,6 +1133,7 @@ a.active {
 
 .button-booking {
   display: inline-block;
+  vertical-align: bottom;
   padding: 3px 16px;
   margin: 14px 0 0;
   font-size: 14px;
@@ -1203,19 +1164,17 @@ a.active {
 .catalog-list {
   display: flex;
   flex-direction: column;
-  padding: 0 73px;
-}
 
-.item-border {
-  width: 1200px;
-  border-top: 1px solid #e5e5e5;
-  margin:0 -73px;
 }
-
 
 .item-wrapper {
   display: flex;
-  padding: 30px 0;
+  padding: 30px 73px;
+  border-top: 1px solid #e5e5e5;
+}
+
+.catalog-list:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .item-photo {
