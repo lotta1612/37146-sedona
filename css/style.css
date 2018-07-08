@@ -345,15 +345,18 @@ template {
 /* ========================= Мои стили ========================= */
 
 body, html {
-  margin: 0;
+  width: 1200px;
+  position: relative;
+  margin: 0 auto;
   padding: 0;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: normal;
+  text-transform: uppercase;
   color: #333333;
   background-color: #f2f2f2;
-  text-transform: uppercase;
+  box-shadow: 4px 0 20px #dbdbdb,  -4px 0 20px #dbdbdb;
 }
 
 a {
@@ -398,7 +401,6 @@ input[type="radio"].visually-hidden {
   width: 1200px;
   margin: 0 auto;
   background-color: #ffffff;
-  box-shadow: 4px 0 20px #dbdbdb,  -4px 0 20px #dbdbdb;
 }
 
 .header-img {
@@ -765,12 +767,16 @@ a.search-result:active {
 /* ----- FOOTER ----- */
 
 footer {
+  width: 100%;
   position: absolute;
+  left: 0;
   bottom: 0;
-  right: calc(50% - 600px);
   opacity: 0.9;
 }
 
+.catalog {
+  position: static;
+}
 
 footer .wrapper {
   display: flex;
@@ -780,6 +786,7 @@ footer .wrapper {
 }
 
 .hashtag-link {
+  padding: 5px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -847,7 +854,7 @@ footer .wrapper {
 
 .search-hotel {
   display: flex;
-  padding: 30px 73px 7px;;
+  padding: 26px 73px 7px;
 }
 
 .search-hotel fieldset {
@@ -872,7 +879,7 @@ footer .wrapper {
 }
 
 .form-group {
-  margin: 0 0 23px;
+  margin: 0 0 25px;
   padding: 0 0 0 40px;
 }
 
@@ -913,7 +920,7 @@ footer .wrapper {
 
 
 .filter-range {
-  width: 330px;
+  width: 317px;
 }
 
 .filter-range-title {
@@ -925,7 +932,7 @@ footer .wrapper {
 
 .price-controls {
   position: relative;
-  height: 36px;
+  height: 32px;
   margin: 0 0 20px;
   border: 2px solid #ffffff;
   border-radius: 2px;
@@ -944,14 +951,14 @@ footer .wrapper {
 
 .price-controls  label {
   display: inline-block;
-  line-height: 34px;
+  line-height: 30px;
   vertical-align: top;
   cursor: pointer;
 }
 
 .price-controls .min-price,
 .price-controls .max-price {
-  width: 90px;
+  width: 75px;
   padding-left: 65px;
 }
 
@@ -1006,7 +1013,7 @@ footer .wrapper {
 
 .button-transparent {
   display: block;
-  margin: 0 auto;
+  margin: 20px auto 24px;
   padding: 6px 35px;
   font-size: 14px;
   line-height: 20px;
