@@ -205,10 +205,6 @@
      background-color: #f2f2f2;
      box-shadow: 4px 0 20px #dbdbdb, -4px 0 20px #dbdbdb;
 }
- a {
-     text-decoration: none;
-     color: #000000;
-}
  ul {
      list-style: none;
      margin: 0;
@@ -238,7 +234,6 @@
 }
  .container {
      width: 1200px;
-     margin: 0 auto;
      background-color: #ffffff;
 }
  .header-img {
@@ -250,6 +245,7 @@
 }
  .site-navigation {
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
      padding: 16px 72px 18px;
      color: #000000;
@@ -257,12 +253,20 @@
 }
  .site-navigation a {
      display: block;
+     text-decoration: none;
+     color: #000000;
+}
+.site-navigation li:nth-child(3) {
+     margin: 0 163px 0 auto;
+}
+.site-navigation li:nth-child(2) {
+     margin: 0 auto 0 147px;
 }
  .site-navigation a:hover, .site-navigation a:focus {
      color: #81b3d2;
 }
  .site-navigation a:active {
-     color: #cacaca;
+     color: rgba(0, 0, 0, 0.3);
 }
  .site-navigation-current a:not([href]) {
      color:#766357;
@@ -274,20 +278,14 @@
      top: 0;
      left: calc(50% - 69px);
 }
- .site-navigation li {
-     width: 240px;
-}
- .site-navigation li:nth-child(3), .site-navigation li:nth-child(4) {
-     text-align: right;
-}
  .reasons {
      text-align: center;
 }
  .intro-text {
-     padding: 60px 0 53px;
+     padding: 56px 0 53px;
 }
  .reasons h2 {
-     padding: 0 0 30px;
+     padding: 0 300px 30px;
      font-size: 21px;
      line-height: 26px;
      font-weight: bold;
@@ -295,6 +293,7 @@
 }
  .description {
      display: flex;
+     flex-wrap: wrap;
      justify-content: space-between;
 }
  .description-img {
@@ -304,7 +303,6 @@
  .description-text {
      box-sizing: border-box;
      width: 400px;
-     height: 256px;
      padding: 47px 70px 60px;
      color: #ffffff;
      background-color: #81b3d2;
@@ -315,10 +313,14 @@
 }
  .number {
      display: block;
-     padding: 23px 0;
+     padding: 23px 0 21px;
+}
+.features .number {
+  padding: 25px 0 21px;
 }
  .features {
      display: flex;
+     flex-wrap: wrap;
      position: relative;
      background-color: #ffffff;
 }
@@ -328,6 +330,9 @@
 }
  .features:not(.grey) {
      padding-top: 86px;
+}
+.features h4 {
+  margin: 28px 0 24px;
 }
  .home::before {
      content: "";
@@ -371,7 +376,7 @@
  .item {
      box-sizing: border-box;
      width: 400px;
-     padding: 46px 70px 80px;
+     padding: 46px 70px 82px;
 }
  .grey .item {
      padding: 46px 70px 60px;
@@ -382,6 +387,9 @@
  .grey {
      background-color: #eeeeee;
 }
+ .grey h3 {
+     padding: 0 70px;
+ }
  .form {
      position: relative;
      text-align: center;
@@ -396,6 +404,7 @@
  .form p {
      padding: 0 0 50px;
 }
+
  .search-header {
      position: relative;
      display: block;
@@ -405,11 +414,14 @@
      line-height: 26px;
      text-align: center;
      color: #ffffff;
+     text-decoration: none;
      text-transform: uppercase;
      background-color: #766357;
      padding: 30px 0;
      margin: 0 auto;
+     border: 0;
      z-index: 1;
+     cursor: pointer;
 }
  .search-header:hover, .search-header:focus {
      background-color: #604e43;
@@ -420,7 +432,7 @@
 }
 /* ----- Форма поиска для index.html ----- */
  .modal-form {
-     display: none;
+     display: block;
      position: absolute;
      box-sizing: border-box;
      width: 568px;
@@ -432,11 +444,8 @@
      background-color: #ffffff;
      box-shadow: 0 0 30px rgba(0,0,0,0.2);
 }
- .modal-form-show {
-     display: block;
-     animation-name: animation;
-     animation-duration: 0.6s;
-     z-index: 0;
+.modal-form-hidden {
+    display: none;
 }
  @keyframes animation {
      0% {
@@ -452,23 +461,25 @@
         transform: translateY(0);
     }
 }
- a.search-result {
+.search-result {
      font-size: 21px;
      font-weight: bold;
      line-height: 26px;
      text-align: center;
-     color: #ffffff;
      vertical-align: middle;
+     color: #ffffff;
+     text-decoration: none;
      text-transform: uppercase;
      background-color: #81b3d2;
      border: none;
      padding: 16px 0;
-     margin: 40px 0 0;
+     margin: 26px 0 0;
+     cursor: pointer;
 }
- a.search-result:hover, a.search-result:active {
+ .search-result:hover, .search-result:focus {
      background-color: #669ec0;
 }
- a.search-result:active {
+ .search-result:active {
      color: #94b9d2;
      background-color: #5496bd;
 }
@@ -480,23 +491,36 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 6px 0;
-     margin: 8px 0;
+     margin: 0 0 29px;
      font-size: 14px;
      font-weight: bold;
      line-height: 26px;
      border: 0;
 }
+.search-item:first-child {
+  padding: 16px 0 0;
+}
  .calendar {
+     padding: 0;
+     display: flex;
+     justify-content: center;
+     align-items: center;
      position: absolute;
      right: 66px;
+     width: 21px;
+     height: 22px;
+     background-color: transparent;
+     border: 0;
      cursor: pointer;
 }
- .calendar:hover, .calendar:focus {
+ .calendar svg:hover, .calendar svg:focus {
      fill: #000000;
 }
- .calendar:active {
+ .calendar svg:active {
      fill: #81b3d2;
+}
+.calendar-button {
+
 }
  .search-window {
      box-sizing: border-box;
@@ -545,6 +569,13 @@
      font-weight: bold;
      cursor: pointer;
 }
+.sign:hover,
+.sign:focus {
+  color: #000000;
+}
+.sign:active {
+  color: #81b3d2;
+}
 /* ----- FOOTER ----- */
  footer {
      width: 100%;
@@ -572,6 +603,7 @@
      font-weight: bold;
      line-height: 26px;
      color: #000000;
+     text-decoration: none;
 }
  .social-link {
      display: flex;
@@ -606,6 +638,10 @@
 }
  .footer-copyright span {
      margin-right: 8px;
+     color: #000000;
+}
+svg.fill {
+  fill: red;
 }
 /* ----- FOOTER END----- */
 /* ------------------- catalog.html ------------------- */
@@ -618,7 +654,7 @@
 }
  .search-hotel {
      display: flex;
-     padding: 26px 73px 7px;
+     padding: 28px 73px 7px;
 }
  .search-hotel fieldset {
      padding: 0;
@@ -780,7 +816,8 @@
  .sort-list a {
      font-size: 12px;
      line-height: 18px;
-     color: #cacaca;
+     color: rgba(0, 0, 0, 0.3);
+     text-decoration: none;
      border-bottom: 1px dotted #81b3d2;
 }
  .sort-list a:hover, .sort-list a:focus {
@@ -815,6 +852,7 @@
 }
  .catalog-sort h3 {
      font-size: 12px;
+     font-weight: normal;
      line-height: 18px;
      color: #000000;
      margin: 0 40px 0 0;
@@ -828,14 +866,15 @@
 }
  .link-hotel {
      color: #000000;
+     text-decoration: none;
 }
  .link-hotel:hover, .link-hotel:focus {
      color: #81b3d2;
 }
  .link-hotel:active {
-     color: #cacaca;
+     color: rgba(0, 0, 0, 0.3);
 }
- .button-more {
+ .hotel-link {
      display: inline-block;
      vertical-align: bottom;
      padding: 3px 16px;
@@ -843,39 +882,30 @@
      font-size: 14px;
      line-height: 21px;
      font-weight: bold;
-     text-transform: uppercase;
      color: #ffffff;
+     text-decoration: none;
+     text-transform: uppercase;
      background-color: #81b3d2;
-     border: 0;
 }
- .button-more:hover, .button-more:focus {
+.more {
+    background-color: #81b3d2;
+}
+ .more:hover, .more:focus {
      background-color: #669ec0;
 }
- .button-more:active {
-     color: #94b9d2;
+ .more:active {
+     color: rgba(255, 255, 255, 0.3);
      background-color: #5496bd;
 }
- .button-booking {
-     display: inline-block;
-     vertical-align: bottom;
-     padding: 3px 16px;
-     margin: 14px 0 0;
-     font-size: 14px;
-     line-height: 21px;
-     font-weight: bold;
-     text-transform: uppercase;
-     color: #ffffff;
-     background-color: #766357;
-     border: 0;
+.booking {
+    background-color: #766357;
 }
- .button-booking:hover, .button-booking:focus {
+ .booking:hover, .booking:focus {
      background-color: #604e43;
-     border: 0;
 }
- .button-booking:active {
-     color: #928a85;
+ .booking:active {
+     color: rgba(255, 255, 255, 0.3);
      background-color: #503e33;
-     border: 0;
 }
 /* ----- Сеточные стили catalog.html + какие-то вверху добавляла ----- */
  .catalog-list {
