@@ -244,6 +244,9 @@
      background-color: #ffffff;
 }
  .site-navigation {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
@@ -292,6 +295,9 @@
      color: #000000;
 }
  .description {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
@@ -319,6 +325,9 @@
   padding: 25px 0 21px;
 }
  .features {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-wrap: wrap;
      position: relative;
@@ -447,20 +456,6 @@
 .modal-form-hidden {
     display: none;
 }
- @keyframes animation {
-     0% {
-        transform: translateY(-80px);
-    }
-     60% {
-        transform: translateY(30px);
-    }
-     80% {
-        transform: translateY(-20px);
-    }
-     100% {
-        transform: translateY(0);
-    }
-}
 .search-result {
      font-size: 21px;
      font-weight: bold;
@@ -484,10 +479,16 @@
      background-color: #5496bd;
 }
  .search-group {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-direction: column;
 }
  .search-item {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -502,6 +503,9 @@
 }
  .calendar {
      padding: 0;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -540,6 +544,9 @@
      border: 2px solid #e5e5e5;
 }
  .search-person {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      justify-content: space-between;
      align-items: center;
@@ -555,6 +562,9 @@
      text-align: center;
 }
  .button-flex {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
 }
  .button-flex button {
@@ -595,6 +605,9 @@
 }
  .hashtag-link {
      padding: 5px 0;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -614,6 +627,9 @@
      background-color: #81b3d2;
 }
  .footer-social ul {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-wrap: wrap;
      justify-content: space-between;
@@ -631,6 +647,9 @@
      fill: #88b6d1;
 }
  .footer-copyright {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -653,6 +672,9 @@ svg.fill {
      background-repeat: no-repeat;
 }
  .search-hotel {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      padding: 28px 73px 7px;
 }
@@ -729,7 +751,9 @@ svg.fill {
      width: 2px;
      height: 22px;
      background: #ffffff;
-     transform: translate(-50%, -50%);
+     -webkit-transform: translate(-50%, -50%);
+         -ms-transform: translate(-50%, -50%);
+             transform: translate(-50%, -50%);
 }
  .price-controls label {
      display: inline-block;
@@ -774,6 +798,7 @@ svg.fill {
      cursor: pointer;
 }
  .range-toggle:hover {
+     top: -10px;
      border: 9px solid #ffffff;
 }
  .range-toggle-min {
@@ -802,11 +827,17 @@ svg.fill {
 /* ----- ШКАЛА КОНЕЦ ----- */
 /* ----- СОРТИРОВКА ----- */
  .catalog-sort {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      align-items: baseline;
      padding: 30px 73px;
 }
  .sort-list {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      margin-right: auto;
 }
@@ -833,6 +864,9 @@ svg.fill {
      border-bottom: 0;
 }
  .icon-dir {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      justify-content: space-between;
      width: 36px;
@@ -909,10 +943,16 @@ svg.fill {
 }
 /* ----- Сеточные стили catalog.html + какие-то вверху добавляла ----- */
  .catalog-list {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-direction: column;
 }
  .item-wrapper {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      padding: 30px 73px;
      border-top: 1px solid #e5e5e5;
@@ -926,17 +966,26 @@ svg.fill {
 }
  .item-info {
      margin-left: 30px;
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
 }
  .hotel-wrapper {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
 }
  .hotel-wrapper div {
      margin-right: 6px;
 }
  .item-rating {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      flex-direction: column;
      justify-content: space-between;
@@ -947,6 +996,9 @@ svg.fill {
      background-color: #f2f2f2;
 }
  .stars {
+     display: -webkit-box;
+     display: -ms-flexbox;
+     display: -webkit-flex;
      display: flex;
      justify-content: flex-end;
      align-items: center;
