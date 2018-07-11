@@ -501,30 +501,31 @@
 .search-item:first-child {
   padding: 16px 0 0;
 }
- .calendar {
-     padding: 0;
-     display: -webkit-box;
-     display: -ms-flexbox;
-     display: -webkit-flex;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     position: absolute;
-     right: 66px;
-     width: 21px;
-     height: 22px;
-     background-color: transparent;
-     border: 0;
-     cursor: pointer;
+.calendar {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 66px;
+    top: 63px;
+    width: 21px;
+    height: 22px;
+    background-color: transparent;
+    border: 0;
+    cursor: pointer;
+}
+.calendar-departure {
+  top: 130px;
 }
  .calendar svg:hover, .calendar svg:focus {
      fill: #000000;
 }
  .calendar svg:active {
      fill: #81b3d2;
-}
-.calendar-button {
-
 }
  .search-window {
      box-sizing: border-box;
@@ -535,6 +536,9 @@
      background-color: #f2f2f2;
      border: 0;
      cursor: pointer;
+}
+input.search-window {
+  border: 0;
 }
  .search-window:hover {
      background-color: #ebebeb;
