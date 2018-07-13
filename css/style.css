@@ -744,6 +744,10 @@ input.search-window {
   border: 0;
 }
 
+input.search-window::placeholder {
+  color: #000000;
+}
+
 .search-window:hover {
   background-color: #ebebeb;
 }
@@ -809,6 +813,7 @@ input.search-window {
 footer {
   width: 100%;
   position: absolute;
+  z-index: 4;
   left: 0;
   bottom: 0;
   opacity: 0.9;
@@ -1338,10 +1343,11 @@ a.active {
 }
 
 @keyframes shake {
-  0%, 100% { transform: translateX(0); }
-  10%, 30%, 50%, 70%, 90% { transform: translateX(-10px); }
-  20%, 40%, 60%, 80% { transform: translateX(10px); }
+  0%, 100% {transform: translateX(0);}
+  10%, 30%, 50%, 70%, 90% {transform: translateX(-10px);}
+  20%, 40%, 60%, 80% {transform: translateX(10px);}
 }
+
 .modal-error {
   animation-name: shake;
   animation-duration: 0.6s;

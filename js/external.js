@@ -4,7 +4,7 @@ var form = document.querySelector(".modal-form");
 var arrival = form.querySelector("[name=hotel-arrival]");
 var departure = form.querySelector("[name=hotel-departure]");
 
-link.addEventListener("click", function(evt) {
+link.addEventListener("click", function (evt) {
   evt.preventDefault();
   popup.classList.toggle("modal-form-hidden");
 });
@@ -12,6 +12,11 @@ link.addEventListener("click", function(evt) {
 form.addEventListener("submit", function (evt) {
   if (!arrival.value || !departure.value) {
     evt.preventDefault();
-    popup.classList.add("modal-error");
+    if (popup.classList.contains("modal-error")) {
+      popup.classList.remove("modal-error");
+    }
+    setTimeout(function () {
+      popup.classList.add("modal-error");
+    });
   }
 });
