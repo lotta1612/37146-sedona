@@ -648,10 +648,10 @@ input[type="radio"].visually-hidden {
 }
 
 @keyframes bounce {
-  0% { transform: translateY(-100px); }
-  70% { transform: translateY(30px); }
-  90% { transform: translateY(-10px); }
-  100% { transform: translateY(0); }
+  0% {transform: translateY(20px);}
+  70% {transform: translateY(100px);}
+  90% {transform: translateY(400px);}
+  100% {transform: translateY(2000px);}
 }
 
 .modal-show {
