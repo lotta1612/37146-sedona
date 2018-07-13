@@ -6,9 +6,8 @@ var departure = form.querySelector("[name=hotel-departure]");
 
 link.addEventListener("click", function (evt) {
   evt.preventDefault();
-  popup.classList.toggle("modal-form-hidden");  
+  popup.classList.toggle("modal-form-hidden");
   popup.classList.toggle("modal-show");
-
 });
 
 form.addEventListener("submit", function (evt) {
